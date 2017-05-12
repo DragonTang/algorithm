@@ -7,8 +7,9 @@ void printArray (int *array, int size) {
   assert(array != NULL && size > 0);
   int i;
   for (i = 0; i < size; i++) {
-    printf("%d\n", array[i]);
+    printf("%d ", array[i]);
   }
+  printf("\n");
 }
 
 int main (void) {

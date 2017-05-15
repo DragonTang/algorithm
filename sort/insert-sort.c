@@ -3,7 +3,7 @@ void insertSort (int array[], int size) {
   for (i = 1; i < size; i++) {
     tmp = array[i];
     p = i;
-    while (tmp < array[ p - 1] && p > 0) {
+    while (p > 0 && tmp < array[ p - 1]) {
       array[p] = array[p - 1];
       --p;
     }
